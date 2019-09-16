@@ -21,3 +21,13 @@ samples, guidance on mobile development, and a full API reference.
 
 Statefulの場合、Stateを利用する際、childrenには変数などをしておき、必要に応じて変数の値をsetStateで書き換える。
 Statelessの場合、後からWidgetの変更ができないため、表示する内容はchildrenに直接指定する。
+
+### 書籍改修箇所
+
+dom.Elementの取得のための、DOMのクラスが実際のWebページと異なっていたので修正。
+
+```
+dom.Element hbody = document.querySelector('.tpcNews_summary');
+dom.Element htitle = document.querySelector('.tpcNews_title');
+dom.Element newslink = document.querySelector('.tpcNews_detailLink a');
+```
